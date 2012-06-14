@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>Downloadify</title>
+		<style type="text/css" media="screen">
+			body {background: #fff; width: 900px; margin: 20px auto;}
+			label, input, textarea, h1, h2, p { font-family: Arial, sans-serif; font-size: 12pt;}
+			input, textarea { border: solid 1px #aaa; padding: 4px; width: 98%;}
+			label { font-weight: bold;}
+			h1 { font-size: 30pt; font-weight: bold; letter-spacing: -1px;}
+			h2 { font-size: 14pt;}
+			pre { overflow: auto; padding: 10px; background: #222; color: #ccc;}
+		</style>
+	</head>
+	<body>
+		<form>                                
+				<div style="float:left;">
+                    <label for="filename">Filename</label>
+                    <br />
+				    <input type="text" name="filename" value="testfile.txt" id="filename" />
+                    <br />
+                    <div id="dlfyWrapper">
+                        <div id="downloadify" style="float:left;">
+                			You must have Flash 10 installed to download this file.
+                		</div>
+                    </div>                
+                </div>
+                
+                <div style="float:left;">
+				    <label for="data">File Contents</label><br />
+                    <textarea cols="40" rows="5" name="data" id="data">
+                    Whatever you put in this text box will be downloaded and saved in the file. If you leave it blank, no file will be downloaded</textarea>
+			    </div>
+                <img src="http://d6ff1xmuve0sx.cloudfront.net/1.9.10-0c132b23/static//ext/main/style/images/cloud9logo_transparent.png">
+		</form>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    	<script type="text/javascript" src="js/jquery.plugin.html2canvas.js"></script>
+    	<script type="text/javascript" src="js/html2canvas.js"></script>
+        
+		<script type="text/javascript" src="js/swfobject.js"></script>
+		<script type="text/javascript" src="js/downloadify.min.js"></script>
+        <script type="text/javascript" src="http://stuartk.com/jszip/jszip.js"></script>
+        <script type="text/javascript" src="http://stuartk.com/jszip/jszip-deflate.js"></script>
+		<script type="text/javascript" src="js/dZscript.js">
+		</script>
+	
+	</body>
+</html>
